@@ -1,8 +1,8 @@
 # Basic
-title: HarwordLiu
-subtitle: HarwordLiu的技术博客
+title: HarwordLiu的博客
+subtitle: 程序猿一枚,现居北京
 welcome_message: 欢迎来到Harword的技术博客
-description: Vno Jekyll is a port of my Ghost theme vno.
+description: <p>长亭外</p><p>荒草蔓</p><p>烟雨任平生</p>
 creator: <a href="http://harwordliu.com">@harword</a>
 
 url: "http://vno.onevcat.com"
@@ -13,12 +13,12 @@ permalink: /:year/:month/:title/
 highlighter: plain
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: rgb(151, 255, 255)
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客
+    description: 查看详细
 
 # Navigation buttons in the front page.
 #nav:
@@ -39,7 +39,7 @@ comment:
 social:
     weibo: RilmaHliu
     github: HarwordLiu
-    twitter: HarwordLiu
+#    twitter: HarwordLiu
     mail: harry9391@163.com
 
 # Google Analytics

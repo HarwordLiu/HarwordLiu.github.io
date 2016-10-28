@@ -21,9 +21,9 @@ blog_button:
     description: 查看详细
 
 # Navigation buttons in the front page.
-#nav:
+nav:
 #    - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-#    # - {title: Another Button, description: A button, url: 'http://example.com'}
+#     - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
 gems: [jekyll-paginate]
@@ -32,8 +32,8 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: vno-jekyll
-    duoshuo: 4fc175f49153aa72cabb437cacecb4b6
+#    disqus: vno-jekyll
+    duoshuo: harwordliu
     
 # Social
 social:

@@ -66,11 +66,7 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 	alert("我的第一个 JavaScript");
 	</script>
 	
-
-
-# test
-## test
-##在 \<head> 或者 \<body> 的JavaScript##
+##在 \<head> 或者 \<body> 的JavaScript
 可以在 HTML 文档中放入不限数量的脚本。
 脚本可位于 HTML 的 <body> 或 <head> 部分中，或者同时存在于两个部分中。
 通常的做法是把函数放入 <head> 部分中，或者放在页面底部。这样就可以把它们安置到同一处位置，不会干扰页面的内容。

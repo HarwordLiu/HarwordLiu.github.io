@@ -67,28 +67,7 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 	</script>
 	
 
-
-##\<body> 中的 JavaScript
-
-
-
-	<!DOCTYPE html>
-	<html>
-	<body>
-	.
-	.
-	<script>
-	document.write("<h1>这是一个标题</h1>");
-	document.write("<p>这是一个段落</p>");
-	</script>
-	.
-	.
-	</body>
-	</html>
-
-
-
-##在 \<head> 或者 \<body> 的JavaScript	
+##在 \<head> 或者 \<body> 的JavaScript
 可以在 HTML 文档中放入不限数量的脚本。
 脚本可位于 HTML 的 <body> 或 <head> 部分中，或者同时存在于两个部分中。
 通常的做法是把函数放入 <head> 部分中，或者放在页面底部。这样就可以把它们安置到同一处位置，不会干扰页面的内容。
@@ -259,8 +238,7 @@ JavaScript 对大小写是敏感的。
 JavaScript 使用 Unicode 字符集。
 Unicode 覆盖了所有的字符，包含标点等字符。
 
-
-##总结
+##总结##
 第一篇笔记就先到这里
 
 

@@ -22,7 +22,7 @@ task :blog do
 	open(@post_name, 'a') do |file|
 			file.puts "---"
 			file.puts "layout: post"
-			file.puts "title: #{@name}"
+			file.puts "title: #{@name} - HarwordLiu"
 			file.puts "date: #{Time.now}"
 			file.puts "categories: #{@categories}"
 			file.puts "   "

@@ -123,9 +123,9 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 
 
 # JavaScript 输出
-JavaScript 没有任何打印或者输出的函数。
+`JavaScript` 没有任何打印或者输出的函数。
 
-JavaScript 可以通过不同的方式来输出数据：
+`JavaScript` 可以通过不同的方式来输出数据：
 
 >1. 使用 window.alert() 弹出警告框。
 >2. 使用 document.write() 方法将内容写到 HTML 文档中。
@@ -134,9 +134,9 @@ JavaScript 可以通过不同的方式来输出数据：
 
 
 # JavaScript 语法
-JavaScript 是一个程序语言。语法规则定义了语言结构。
+`JavaScript` 是一个程序语言。语法规则定义了语言结构。
 
-JavaScript 是一个脚本语言。它是一个轻量级，但功能强大的编程语言。
+`JavaScript` 是一个脚本语言。它是一个轻量级，但功能强大的编程语言。
 
 ## JavaScript 字面量
 **数字（Number）字面量** 可以是整数或者是小数，或者是科学计数(e)。
@@ -169,7 +169,7 @@ JavaScript 是一个脚本语言。它是一个轻量级，但功能强大的编
 
 
 ## JavaScript 变量
-JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值：
+`JavaScript` 使用关键字 `var` 来定义变量， 使用等号来为变量赋值：
 
 	var x, length;
 	x = 5;
@@ -187,27 +187,27 @@ JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值
 条件，比较及逻辑运算符|== === != < > >= <= && \|\| !|在 JS 比较运算符中描述
 
 ## JavaScript 语句
-在 HTML 中，JavaScript 语句向浏览器发出的命令。
+在 `HTML` 中，`JavaScript` 语句向浏览器发出的命令。
 语句是用分号分隔`;`
 ## JavaScript 关键词
-JavaScript 语句通常于关键词为开头。 var 关键词告诉浏览器创建一个新的变量：
+`JavaScript` 语句通常于关键词为开头。 `var` 关键词告诉浏览器创建一个新的变量：
 
 	var x = 5 + 6;
 	var y = x * 10;
 
 
 ## JavaScript 关键字
-和其他任何编程语言一样，JavaScript 保留了一些关键字为自己所用。
-JavaScript 同样保留了一些关键字，这些关键字在当前的语言版本中并没有使用，但在以后 JavaScript 扩展中会用到。
-JavaScript 关键字必须以字母、下划线（_）或美元符（$）开始。
-后续的字符可以是字母、数字、下划线或美元符（数字是不允许作为首字符出现的，以便 JavaScript 可以轻易区分开关键字和数字）。
+和其他任何编程语言一样，`JavaScript` 保留了一些关键字为自己所用。
+`JavaScript` 同样保留了一些关键字，这些关键字在当前的语言版本中并没有使用，但在以后 `JavaScript` 扩展中会用到。
+`JavaScript` 关键字必须以字母、下划线`（_）`或美元符`（$）`开始。
+后续的字符可以是字母、数字、下划线或美元符（数字是不允许作为首字符出现的，以便 `JavaScript` 可以轻易区分开关键字和数字）。
 
 
 ## JavaScript 注释
 使用`//`进行注释
 
 ## JavaScript 数据类型
-JavaScript 有多种数据类型：数字，字符串，数组，对象等等：
+`JavaScript` 有多种数据类型：数字，字符串，数组，对象等等：
 
 	var length = 16;                                  // Number 通过数字字面量赋值 
 	var points = x * 10;                              // Number 通过表达式字面量赋值
@@ -217,7 +217,7 @@ JavaScript 有多种数据类型：数字，字符串，数组，对象等等：
 
 
 ## JavaScript 函数
-JavaScript 语句可以写在函数内，函数可以重复引用：
+`JavaScript` 语句可以写在函数内，函数可以重复引用：
 
 **引用一个函数** = 调用函数(执行函数内的语句)。
 
@@ -227,15 +227,15 @@ JavaScript 语句可以写在函数内，函数可以重复引用：
 
 
 ## JavaScript 对大小写敏感。
-JavaScript 对大小写是敏感的。
-当编写 JavaScript 语句时，请留意是否关闭大小写切换键。
-函数 getElementById 与 getElementbyID 是不同的。
-同样，变量 myVariable 与 MyVariable 也是不同的。
+`JavaScript` 对大小写是敏感的。
+当编写 `JavaScript` 语句时，请留意是否关闭大小写切换键。
+函数 `getElementById` 与 `getElementbyID` 是不同的。
+同样，变量 `myVariable` 与 `MyVariable` 也是不同的。
 
 
 ## JavaScript 字符集
-JavaScript 使用 Unicode 字符集。
-Unicode 覆盖了所有的字符，包含标点等字符。
+`JavaScript` 使用 `Unicode` 字符集。
+`Unicode` 覆盖了所有的字符，包含标点等字符。
 
 ## 总结
 第一篇笔记就先到这里

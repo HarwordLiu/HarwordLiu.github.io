@@ -240,7 +240,7 @@ JavaScript 只有一种数字类型。数字可以带小数点，也可以不带
 
 对象|属性|方法
 ---|---|---
-![car](http://harwordliu.com/assets/blogImages/2016-11-03-car.jpg)|car.name car.model car.weight car.color|car.start() car.drive() car.brake() car.stop()
+![car](http://harwordliu.com/assets/blogImages/2016-11-03-car.jpg)|car.name car.model car.color|car.start() car.drive() car.brake()
 
 所有汽车都有这些属性，但是每款车的属性都不尽相同。
 所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。
@@ -253,10 +253,10 @@ JavaScript 只有一种数字类型。数字可以带小数点，也可以不带
 
 对象也是一个变量，但对象可以包含多个值（多个变量）。
 
-	var car = {name:"Fiat", model:500, color:"white", weight:850};
+	var car = {name:"Fiat", model:500, color:"white"};
 
-在以上实例中，4 个值`"Fiat", 500, "white", 850`赋予变量 `car`。
-在以上实例中，4 个变量`type, model, color, weight`赋予变量 `car`。
+在以上实例中，4 个值`"Fiat", 500, "white"`赋予变量 `car`。
+在以上实例中，4 个变量`name, model, color`赋予变量 `car`。
 
 `JavaScript` 对象是变量的容器。
 
@@ -311,7 +311,7 @@ JavaScript 只有一种数字类型。数字可以带小数点，也可以不带
 有多种方式可以创建，使用和修改 `JavaScript` 对象。
 同样也有多种方式用来创建，使用和修改属性和方法。
 
-##总结
+## 总结
 本篇笔记依然都是基础篇，详细知识点博主在日后的文章中会展开深入学习。
 
 

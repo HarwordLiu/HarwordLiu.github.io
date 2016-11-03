@@ -5,12 +5,12 @@
     <description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;用我不悠扬的歌声&lt;/p&gt;&lt;p&gt;温暖你整个旅途&lt;/p&gt;</description>
     <link>http://vno.onevcat.com/</link>
     <atom:link href="http://vno.onevcat.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Nov 2016 17:03:02 +0800</pubDate>
-    <lastBuildDate>Thu, 03 Nov 2016 17:03:02 +0800</lastBuildDate>
+    <pubDate>Thu, 03 Nov 2016 17:08:28 +0800</pubDate>
+    <lastBuildDate>Thu, 03 Nov 2016 17:08:28 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>JavaScript自学第二天</title>
+        <title>JavaScript自学第二天 - HarwordLiu</title>
         <description>&lt;h1 id=&quot;javascript-&quot;&gt;JavaScript 语句&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。
 下面的 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 语句向 &lt;code class=&quot;highlighter-rouge&quot;&gt;id=&quot;demo&quot;&lt;/code&gt; 的 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; 元素输出文本 &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;你好 Dolly&quot; &lt;/code&gt;&lt;/p&gt;
@@ -359,13 +359,13 @@ var person= new Object;
     &lt;tr&gt;
       &lt;th&gt;对象&lt;/th&gt;
       &lt;th&gt;属性&lt;/th&gt;
-      &lt;th&gt;对象&lt;/th&gt;
+      &lt;th&gt;方法&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;&lt;img src=&quot;https://harwordliu.com/assets/blogImages/2016-11-03-car.jpg&quot; alt=&quot;car&quot; /&gt;&lt;/td&gt;
-      &lt;td&gt;car.name = Fiat  car.model = 500 car.weight = 850kg car.color = white&lt;/td&gt;
+      &lt;td&gt;&lt;img src=&quot;http://harwordliu.com/assets/blogImages/2016-11-03-car.jpg&quot; alt=&quot;car&quot; /&gt;&lt;/td&gt;
+      &lt;td&gt;car.name car.model car.weight car.color&lt;/td&gt;
       &lt;td&gt;car.start() car.drive() car.brake() car.stop()&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript自学第二天
+title: JavaScript自学第二天 - HarwordLiu
 date: 2016-11-03 13:02:36 +0800
 categories: JavaScript
    
@@ -238,9 +238,9 @@ JavaScript 只有一种数字类型。数字可以带小数点，也可以不带
 真实生活中，一辆汽车是一个对象。
 对象有它的属性，如重量和颜色等，方法有启动停止等:
 
-对象|属性|对象
+对象|属性|方法
 ---|---|---
-![car](https://harwordliu.com/assets/blogImages/2016-11-03-car.jpg)|car.name = Fiat  car.model = 500 car.weight = 850kg car.color = white|car.start() car.drive() car.brake() car.stop()
+![car](http://harwordliu.com/assets/blogImages/2016-11-03-car.jpg)|car.name car.model car.weight car.color|car.start() car.drive() car.brake() car.stop()
 
 所有汽车都有这些属性，但是每款车的属性都不尽相同。
 所有汽车都拥有这些方法，但是它们被执行的时间都不尽相同。

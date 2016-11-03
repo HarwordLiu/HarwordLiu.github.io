@@ -1,7 +1,7 @@
 # Basic
 title: HarwordLiu
 subtitle: 程序猿一枚,现居北京
-welcome_message: 欢迎来到Harword的博客
+welcome_message: 欢迎来到HarwordLiu的博客
 description: <p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p>
 #<p></p><p>长亭外</p><p>荒草蔓</p><p>烟雨任平生</p>
 creator: <a href="http://harwordliu.com">@harword</a>
@@ -50,22 +50,3 @@ ga:
 # 转换
 markdown:    kramdown
 highlighter: rouge
-lsi:         false
-excerpt_separator: "\n\n"
-incremental: false
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-  coderay:
-    coderay_wrap:              div
-    coderay_line_numbers:      inline
-    coderay_line_number_start: 1
-    coderay_tab_width:         4
-    coderay_bold_every:        10
-    coderay_css:               style

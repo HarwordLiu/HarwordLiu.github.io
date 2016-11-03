@@ -5,37 +5,37 @@
     <description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;用我不悠扬的歌声&lt;/p&gt;&lt;p&gt;温暖你整个旅途&lt;/p&gt;</description>
     <link>http://vno.onevcat.com/</link>
     <atom:link href="http://vno.onevcat.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Nov 2016 11:11:34 +0800</pubDate>
-    <lastBuildDate>Thu, 03 Nov 2016 11:11:34 +0800</lastBuildDate>
+    <pubDate>Thu, 03 Nov 2016 11:15:57 +0800</pubDate>
+    <lastBuildDate>Thu, 03 Nov 2016 11:15:57 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
         <title>JavaScript自学第一天 - HarwordLiu</title>
         <description>&lt;h1 id=&quot;javascripthttpszhwikipediaorgzh-hansjavascript-&quot;&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-hans/JavaScript&quot;&gt;JavaScript&lt;/a&gt; 简介&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt;是&lt;code&gt;Web&lt;/code&gt;的编程语言。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;是&lt;code class=&quot;highlighter-rouge&quot;&gt;Web&lt;/code&gt;的编程语言。&lt;/p&gt;
 
-&lt;p&gt;所有现代的&lt;code&gt;HTML&lt;/code&gt;页面都使用&lt;code&gt;JavaScript&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;所有现代的&lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt;页面都使用&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;。&lt;/p&gt;
 
 &lt;p&gt;更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。&lt;/p&gt;
 
 &lt;p&gt;博主主业iOS开发, 不过就目前移动端的趋势,&lt;/p&gt;
 
-&lt;p&gt;仿佛&lt;code&gt;JavaScript&lt;/code&gt;已经主宰了三端的开发。&lt;/p&gt;
+&lt;p&gt;仿佛&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;已经主宰了三端的开发。&lt;/p&gt;
 
 &lt;p&gt;混合开发的优势实在是太明显了。所以该学的要学啊!&lt;/p&gt;
 
-&lt;p&gt;学习&lt;code&gt;JavaScript&lt;/code&gt;要有&lt;code&gt;HTML&lt;/code&gt;和&lt;code&gt;CSS&lt;/code&gt;的基础&lt;/p&gt;
+&lt;p&gt;学习&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;要有&lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;CSS&lt;/code&gt;的基础&lt;/p&gt;
 
 &lt;p&gt;因为大部分实例都是通过web来演示的&lt;/p&gt;
 
 &lt;h2 id=&quot;javascript-&quot;&gt;JavaScript 是脚本语言&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 是一种轻量级的编程语言。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 是一种轻量级的编程语言。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 是可插入 HTML 页面的编程代码。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 是可插入 HTML 页面的编程代码。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 插入 HTML 页面后，可由所有的现代浏览器执行。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 插入 HTML 页面后，可由所有的现代浏览器执行。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 很容易学习。(瞎比说的 …)&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 很容易学习。(瞎比说的 …)&lt;/p&gt;
 
 &lt;h2 id=&quot;javascript--1&quot;&gt;JavaScript 能干什么?&lt;/h2&gt;
 &lt;blockquote&gt;
@@ -53,28 +53,29 @@
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;javascript--java&quot;&gt;JavaScript != Java&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 与 &lt;code&gt;Java&lt;/code&gt; 是两种完全不同的语言，无论在概念上还是设计上。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 与 &lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt; 是两种完全不同的语言，无论在概念上还是设计上。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;（由 Sun 发明）是更复杂的编程语言。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Java&lt;/code&gt;（由 Sun 发明）是更复杂的编程语言。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;ECMA-262&lt;/code&gt; 是 &lt;code&gt;JavaScript&lt;/code&gt; 标准的官方名称。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ECMA-262&lt;/code&gt; 是 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 标准的官方名称。&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;JavaScript&lt;/code&gt; 由 &lt;code&gt;Brendan Eich&lt;/code&gt; 发明。
-它于 1995 年出现在 &lt;code&gt;Netscape&lt;/code&gt; 中（该浏览器已停止更新），并于 1997 年被 &lt;code&gt;ECMA&lt;/code&gt;（一个标准协会）采纳。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 由 &lt;code class=&quot;highlighter-rouge&quot;&gt;Brendan Eich&lt;/code&gt; 发明。
+它于 1995 年出现在 &lt;code class=&quot;highlighter-rouge&quot;&gt;Netscape&lt;/code&gt; 中（该浏览器已停止更新），并于 1997 年被 &lt;code class=&quot;highlighter-rouge&quot;&gt;ECMA&lt;/code&gt;（一个标准协会）采纳。&lt;/p&gt;
 
 &lt;h1 id=&quot;javascript--2&quot;&gt;JavaScript 用法&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;HTML&lt;/code&gt; 中的脚本必须位于 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 与 &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 标签之间。
-脚本可被放置在 &lt;code&gt;HTML&lt;/code&gt; 页面的 &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 部分中。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; 中的脚本必须位于 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 与 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 标签之间。
+脚本可被放置在 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; 页面的 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; 部分中。&lt;/p&gt;
 
 &lt;h2 id=&quot;script&quot;&gt;&amp;lt;script&amp;gt;标签&lt;/h2&gt;
-&lt;p&gt;如需在 &lt;code&gt;HTML&lt;/code&gt; 页面中插入 &lt;code&gt;JavaScript&lt;/code&gt;，请使用 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 标签。
-&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 会告诉 &lt;code&gt;JavaScript&lt;/code&gt; 在何处开始和结束。
-&lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 和 &lt;code&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 之间的代码行包含了 &lt;code&gt;JavaScript&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;如需在 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTML&lt;/code&gt; 页面中插入 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;，请使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 标签。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 会告诉 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 在何处开始和结束。
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;/script&amp;gt;&lt;/code&gt; 之间的代码行包含了 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;script&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script&amp;gt;
 alert(&quot;我的第一个 JavaScript&quot;);
 &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;head--body-javascript&quot;&gt;在 &amp;lt;head&amp;gt; 或者 &amp;lt;body&amp;gt; 的JavaScript&lt;/h2&gt;
 &lt;p&gt;可以在 HTML 文档中放入不限数量的脚本。
@@ -83,54 +84,57 @@ alert(&quot;我的第一个 JavaScript&quot;);
 
 &lt;p&gt;&lt;strong&gt;&amp;lt;head&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;head&amp;gt;
-&amp;lt;script&amp;gt;
-function myFunction()
-{
-document.getElementById(&quot;demo&quot;).innerHTML=&quot;我的第一个 JavaScript 函数&quot;;
-}
-&amp;lt;/script&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;h1&amp;gt;我的 Web 页面&amp;lt;/h1&amp;gt;
-&amp;lt;p id=&quot;demo&quot;&amp;gt;一个段落&amp;lt;/p&amp;gt;
-&amp;lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&amp;gt;尝试一下&amp;lt;/button&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;demo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;我的第一个 JavaScript 函数&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;我的 Web 页面&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;demo&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;一个段落&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myFunction()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;尝试一下&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;&amp;lt;body&amp;gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;h1&amp;gt;我的 Web 页面&amp;lt;/h1&amp;gt;
-&amp;lt;p id=&quot;demo&quot;&amp;gt;一个段落&amp;lt;/p&amp;gt;
-&amp;lt;button type=&quot;button&quot; onclick=&quot;myFunction()&quot;&amp;gt;尝试一下&amp;lt;/button&amp;gt;
-&amp;lt;script&amp;gt;
-function myFunction()
-{
-document.getElementById(&quot;demo&quot;).innerHTML=&quot;我的第一个 JavaScript 函数&quot;;
-}
-&amp;lt;/script&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;我的 Web 页面&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;p&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;demo&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;一个段落&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onclick=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myFunction()&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;尝试一下&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myFunction&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;demo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;我的第一个 JavaScript 函数&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;javascript&quot;&gt;加载外部的 JavaScript&lt;/h2&gt;
 &lt;p&gt;可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。
-外部 &lt;code&gt;JavaScript&lt;/code&gt; 文件的文件扩展名是 .js。
-如需使用外部文件，请在 &lt;code&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 标签的 &lt;code&gt;src&lt;/code&gt; 属性中设置该 .js 文件：&lt;/p&gt;
+外部 &lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt; 文件的文件扩展名是 .js。
+如需使用外部文件，请在 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;&lt;/code&gt; 标签的 &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; 属性中设置该 .js 文件：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;html&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;script src=&quot;myScript.js&quot;&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myScript.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h1 id=&quot;javascript--3&quot;&gt;JavaScript 输出&lt;/h1&gt;
 &lt;p&gt;JavaScript 没有任何打印或者输出的函数。&lt;/p&gt;
@@ -154,45 +158,52 @@ document.getElementById(&quot;demo&quot;).innerHTML=&quot;我的第一个 JavaSc
 &lt;h2 id=&quot;javascript--5&quot;&gt;JavaScript 字面量&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;数字（Number）字面量&lt;/strong&gt; 可以是整数或者是小数，或者是科学计数(e)。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;3.14
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;3.14
 1001
 123e5
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;字符串（String）字面量&lt;/strong&gt; 可以使用单引号或双引号:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&quot;John Doe&quot;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;John Doe&quot;
 'John Doe'
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;表达式字面量&lt;/strong&gt; 用于计算：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;5 + 6
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;5 + 6
 5 * 10
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;数组（Array）字面量&lt;/strong&gt; 定义一个数组：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;[40, 100, 1, 5, 25, 10]
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[40, 100, 1, 5, 25, 10]
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;对象（Object）字面量&lt;/strong&gt; 定义一个对象：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;}
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;firstName:&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;John&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;lastName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Doe&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;eyeColor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;blue&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;函数（Function）字面量&lt;/strong&gt; 定义一个函数：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function myFunction(a, b) { return a * b;}
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction(a, b) { return a * b;}
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;javascript--6&quot;&gt;JavaScript 变量&lt;/h2&gt;
 &lt;p&gt;JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var x, length;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var x, length;
 x = 5;
 length = 6;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;变量可以通过变量名访问。&lt;/p&gt;
@@ -228,13 +239,14 @@ length = 6;
 
 &lt;h2 id=&quot;javascript--8&quot;&gt;JavaScript 语句&lt;/h2&gt;
 &lt;p&gt;在 HTML 中，JavaScript 语句向浏览器发出的命令。
-语句是用分号分隔&lt;code&gt;;&lt;/code&gt;&lt;/p&gt;
+语句是用分号分隔&lt;code class=&quot;highlighter-rouge&quot;&gt;;&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&quot;javascript--9&quot;&gt;JavaScript 关键词&lt;/h2&gt;
 &lt;p&gt;JavaScript 语句通常于关键词为开头。 var 关键词告诉浏览器创建一个新的变量：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var x = 5 + 6;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var x = 5 + 6;
 var y = x * 10;
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;javascript--10&quot;&gt;JavaScript 关键字&lt;/h2&gt;
 &lt;p&gt;和其他任何编程语言一样，JavaScript 保留了一些关键字为自己所用。
@@ -243,27 +255,29 @@ JavaScript 关键字必须以字母、下划线（_）或美元符（$）开始�
 后续的字符可以是字母、数字、下划线或美元符（数字是不允许作为首字符出现的，以便 JavaScript 可以轻易区分开关键字和数字）。&lt;/p&gt;
 
 &lt;h2 id=&quot;javascript--11&quot;&gt;JavaScript 注释&lt;/h2&gt;
-&lt;p&gt;使用&lt;code&gt;//&lt;/code&gt;进行注释&lt;/p&gt;
+&lt;p&gt;使用&lt;code class=&quot;highlighter-rouge&quot;&gt;//&lt;/code&gt;进行注释&lt;/p&gt;
 
 &lt;h2 id=&quot;javascript--12&quot;&gt;JavaScript 数据类型&lt;/h2&gt;
 &lt;p&gt;JavaScript 有多种数据类型：数字，字符串，数组，对象等等：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;var length = 16;                                  // Number 通过数字字面量赋值 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;var length = 16;                                  // Number 通过数字字面量赋值 
 var points = x * 10;                              // Number 通过表达式字面量赋值
 var lastName = &quot;Johnson&quot;;                         // String 通过字符串字面量赋值
 var cars = [&quot;Saab&quot;, &quot;Volvo&quot;, &quot;BMW&quot;];              // Array  通过数组字面量赋值
 var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;};  // Object 通过对象字面量赋值
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;javascript--13&quot;&gt;JavaScript 函数&lt;/h2&gt;
 &lt;p&gt;JavaScript 语句可以写在函数内，函数可以重复引用：&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;引用一个函数&lt;/strong&gt; = 调用函数(执行函数内的语句)。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;function myFunction(a, b) {
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;function myFunction(a, b) {
 	return a * b;                                // 返回 a 乘于 b 的结果
 }
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;h2 id=&quot;javascript--14&quot;&gt;JavaScript 对大小写敏感。&lt;/h2&gt;
 &lt;p&gt;JavaScript 对大小写是敏感的。
@@ -291,9 +305,9 @@ Unicode 覆盖了所有的字符，包含标点等字符。&lt;/p&gt;
         <description>&lt;h2 id=&quot;hello-world&quot;&gt;Hello World&lt;/h2&gt;
 &lt;p&gt;还记得2015年下定决心正式走入这一行，一转眼已经2016年末了。&lt;/p&gt;
 
-&lt;p&gt;依稀记得当初在控制台打印出的第一行便是&lt;code&gt;Hello World&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;依稀记得当初在控制台打印出的第一行便是&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;好吧，我想每个程序猿都有这么一个&lt;code&gt;Hello World&lt;/code&gt;情节。&lt;/p&gt;
+&lt;p&gt;好吧，我想每个程序猿都有这么一个&lt;code class=&quot;highlighter-rouge&quot;&gt;Hello World&lt;/code&gt;情节。&lt;/p&gt;
 
 &lt;p&gt;同样也有一个博客情节。&lt;/p&gt;
 
@@ -301,14 +315,14 @@ Unicode 覆盖了所有的字符，包含标点等字符。&lt;/p&gt;
 
 &lt;p&gt;从最初的域名购买到主机选择，等等&lt;/p&gt;
 
-&lt;p&gt;最终选择了&lt;code&gt;自己购买域名&lt;/code&gt;+&lt;code&gt;Github托管数据&lt;/code&gt;+&lt;code&gt;Jekyll&lt;/code&gt;+&lt;code&gt;一些组件&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;最终选择了&lt;code class=&quot;highlighter-rouge&quot;&gt;自己购买域名&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Github托管数据&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;Jekyll&lt;/code&gt;+&lt;code class=&quot;highlighter-rouge&quot;&gt;一些组件&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;目前博客刚刚开始，好吧，这块地盘属于我！&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;最初的目的&lt;/h2&gt;
-&lt;p&gt;最初的目的其实特别简单，博主从事iOS开发，但是迫于大势所趋，&lt;code&gt;JavaScript&lt;/code&gt;渐渐地称霸，真的是很无奈的一件事。不过这也验证了, &lt;strong&gt;互联网一直是这个世界发展最快的平台。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;最初的目的其实特别简单，博主从事iOS开发，但是迫于大势所趋，&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;渐渐地称霸，真的是很无奈的一件事。不过这也验证了, &lt;strong&gt;互联网一直是这个世界发展最快的平台。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;所以学习&lt;code&gt;JavaScript&lt;/code&gt;必须的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;所以学习&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;必须的。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;而自学之路注定是坎坷的，我比较偏向于产品与学习同时推进的学习方式。&lt;/p&gt;
 
@@ -319,14 +333,14 @@ Unicode 覆盖了所有的字符，包含标点等字符。&lt;/p&gt;
 &lt;p&gt;但是对于我来讲上来就把博客搞得很华丽这个不现实，所以最终选择了楼上的plan。&lt;/p&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;目前计划&lt;/h2&gt;
-&lt;p&gt;短期内的计划是更一个系列博文，关于&lt;code&gt;JavaScript&lt;/code&gt;自学&lt;/p&gt;
+&lt;p&gt;短期内的计划是更一个系列博文，关于&lt;code class=&quot;highlighter-rouge&quot;&gt;JavaScript&lt;/code&gt;自学&lt;/p&gt;
 
 &lt;p&gt;期间也会有一些关于iOS的技术&lt;/p&gt;
 
 &lt;p&gt;有任何关于本博客的问题都可以直接 &lt;a href=&quot;harwordliu@163.com&quot;&gt;联系我&lt;/a&gt; &lt;a href=&quot;mailto:harwordliu@163.com&quot;&gt;harwordliu@163.com&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;section-2&quot;&gt;关于&lt;/h2&gt;
-&lt;p&gt;这个博客姓&lt;code&gt;Liu&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这个博客姓&lt;code class=&quot;highlighter-rouge&quot;&gt;Liu&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;所以我可能很任性，我想更什么就更什么！&lt;/p&gt;
 

@@ -66,7 +66,7 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 	alert("我的第一个 JavaScript");
 	</script>
 	
-##在 \<head> 或者 \<body> 的JavaScript
+## 在 \<head> 或者 \<body> 的JavaScript
 可以在 HTML 文档中放入不限数量的脚本。
 脚本可位于 HTML 的 <body> 或 <head> 部分中，或者同时存在于两个部分中。
 通常的做法是把函数放入 <head> 部分中，或者放在页面底部。这样就可以把它们安置到同一处位置，不会干扰页面的内容。
@@ -109,7 +109,7 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 	
 
 
-##加载外部的 JavaScript
+## 加载外部的 JavaScript
 可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。
 外部 `JavaScript` 文件的文件扩展名是 .js。
 如需使用外部文件，请在 `<script>` 标签的 `src` 属性中设置该 .js 文件：
@@ -122,7 +122,7 @@ date: 2016-11-02 21:32:24.000000000 +08:00
 	</html>
 
 
-#JavaScript 输出
+# JavaScript 输出
 JavaScript 没有任何打印或者输出的函数。
 
 JavaScript 可以通过不同的方式来输出数据：
@@ -133,12 +133,12 @@ JavaScript 可以通过不同的方式来输出数据：
 >4. 使用 console.log() 写入到浏览器的控制台。
 
 
-#JavaScript 语法
+# JavaScript 语法
 JavaScript 是一个程序语言。语法规则定义了语言结构。
 
 JavaScript 是一个脚本语言。它是一个轻量级，但功能强大的编程语言。
 
-##JavaScript 字面量
+## JavaScript 字面量
 **数字（Number）字面量** 可以是整数或者是小数，或者是科学计数(e)。
 
 	3.14
@@ -168,7 +168,7 @@ JavaScript 是一个脚本语言。它是一个轻量级，但功能强大的编
 	function myFunction(a, b) { return a * b;}
 
 
-##JavaScript 变量
+## JavaScript 变量
 JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值：
 
 	var x, length;
@@ -179,34 +179,34 @@ JavaScript 使用关键字 var 来定义变量， 使用等号来为变量赋值
 
 >在[指令式语言](https://zh.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B)中，变量通常是可变的。字面量是一个恒定的值。
 	
-##JavaScript 操作符
+## JavaScript 操作符
 
 类型|实例|描述
 ----|-----|-----
 赋值，算术和位运算符|=  +  -  *  /|在 JS 运算符中描述
 条件，比较及逻辑运算符|== === != < > >= <= && \|\| !|在 JS 比较运算符中描述
 
-##JavaScript 语句
+## JavaScript 语句
 在 HTML 中，JavaScript 语句向浏览器发出的命令。
 语句是用分号分隔`;`
-##JavaScript 关键词
+## JavaScript 关键词
 JavaScript 语句通常于关键词为开头。 var 关键词告诉浏览器创建一个新的变量：
 
 	var x = 5 + 6;
 	var y = x * 10;
 
 
-##JavaScript 关键字
+## JavaScript 关键字
 和其他任何编程语言一样，JavaScript 保留了一些关键字为自己所用。
 JavaScript 同样保留了一些关键字，这些关键字在当前的语言版本中并没有使用，但在以后 JavaScript 扩展中会用到。
 JavaScript 关键字必须以字母、下划线（_）或美元符（$）开始。
 后续的字符可以是字母、数字、下划线或美元符（数字是不允许作为首字符出现的，以便 JavaScript 可以轻易区分开关键字和数字）。
 
 
-##JavaScript 注释
+## JavaScript 注释
 使用`//`进行注释
 
-##JavaScript 数据类型
+## JavaScript 数据类型
 JavaScript 有多种数据类型：数字，字符串，数组，对象等等：
 
 	var length = 16;                                  // Number 通过数字字面量赋值 
@@ -216,7 +216,7 @@ JavaScript 有多种数据类型：数字，字符串，数组，对象等等：
 	var person = {firstName:"John", lastName:"Doe"};  // Object 通过对象字面量赋值
 
 
-##JavaScript 函数
+## JavaScript 函数
 JavaScript 语句可以写在函数内，函数可以重复引用：
 
 **引用一个函数** = 调用函数(执行函数内的语句)。
@@ -226,18 +226,18 @@ JavaScript 语句可以写在函数内，函数可以重复引用：
 	}
 
 
-##JavaScript 对大小写敏感。
+## JavaScript 对大小写敏感。
 JavaScript 对大小写是敏感的。
 当编写 JavaScript 语句时，请留意是否关闭大小写切换键。
 函数 getElementById 与 getElementbyID 是不同的。
 同样，变量 myVariable 与 MyVariable 也是不同的。
 
 
-##JavaScript 字符集
+## JavaScript 字符集
 JavaScript 使用 Unicode 字符集。
 Unicode 覆盖了所有的字符，包含标点等字符。
 
-##总结##
+## 总结
 第一篇笔记就先到这里
 
 

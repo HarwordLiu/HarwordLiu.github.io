@@ -2,6 +2,8 @@
 layout: post
 title: JavaScript自学第一天 - HarwordLiu
 date: 2016-11-02 21:32:24.000000000 +08:00
+categories: JavaScript
+
 ---
 # [JavaScript](https://zh.wikipedia.org/zh-hans/JavaScript) 简介
 `JavaScript`是`Web`的编程语言。

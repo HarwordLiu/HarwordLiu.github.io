@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>JavaScript自学第三天 - HarwordLiu</title>
+  <meta name="description" content="JavaScript 函数函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。">
+  <meta name="author" content="Wei Wang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="JavaScript自学第三天 - HarwordLiu">
+  <meta name="twitter:description" content="JavaScript 函数函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="JavaScript自学第三天 - HarwordLiu">
+  <meta property="og:description" content="JavaScript 函数函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。">
+  
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://vno.onevcat.com/2016/11/javascript%E8%87%AA%E5%AD%A6%E7%AC%AC%E4%B8%89%E5%A4%A9/">
+  <link rel="alternate" type="application/rss+xml" title="HarwordLiu" href="http://vno.onevcat.com/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 HarwordLiu 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="HarwordLiu logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for HarwordLiu" class="blog-button">HarwordLiu</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">程序猿一枚,现居北京</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"><p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        <p class="panel-cover__description">欢迎来到HarwordLiu的博客</p>
+        
+        
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="查看详细" class="blog-button">博客</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/RilmaHliu" title="@RilmaHliu 的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/HarwordLiu" title="@HarwordLiu 的 Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+  
+  
+
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:harry9391@163.com" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-rgb(151, 255, 255)"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-11-10 10:05:27 +0800" itemprop="datePublished" class="post-meta__date date">2016-11-10</time> &#8226; <span class="post-meta__tags tags"></span>
+    </div>
+    <h1 class="post-title">JavaScript自学第三天 - HarwordLiu</h1>
+  </header>
+
+  <section class="post">
+    <h1 id="javascript-">JavaScript 函数</h1>
+<p>函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+<span class="kd">function</span> <span class="nx">myFunction</span><span class="p">()</span>
+	<span class="p">{</span>
+		<span class="nx">alert</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"myFunction()"</span><span class="nt">&gt;</span>Try it<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
+
+<h2 id="javascript--1">JavaScript 函数语法</h2>
+<p>函数就是包裹在花括号中的代码块，前面使用了关键词 <code class="highlighter-rouge">function</code>：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function functionName()
+{
+	执行代码
+}
+</code></pre>
+</div>
+
+<p>当调用该函数时，会执行函数内的代码。
+可以在某事件发生时直接调用函数（比如当用户点击按钮时），并且可由 <code class="highlighter-rouge">JavaScript</code> 在任何位置进行调用。</p>
+<h2 id="section">调用带参数的函数</h2>
+<p>在调用函数时，可以向其传递值，这些值被称为参数。
+这些参数可以在函数中使用。可以发送任意多的参数，由逗号 <code class="highlighter-rouge">,</code> 分隔：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>myFunction(argument1,argument2)
+</code></pre>
+</div>
+
+<p>声明函数时，把参数作为变量来声明：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function myFunction(var1,var2)
+{
+	代码
+}
+</code></pre>
+</div>
+
+<p>变量和参数必须以一致的顺序出现。第一个变量就是第一个被传递的参数的给定的值，以此类推。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;button onclick="myFunction('Harry Potter','Wizard')"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+&lt;/script&gt;
+</code></pre>
+</div>
+
+<p>上面的函数在按钮被点击时会提示 “Welcome Harry Potter, the Wizard”。
+函数很灵活，您可以使用不同的参数来调用该函数，这样就会给出不同的消息：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&lt;button onclick="myFunction('Harry Potter','Wizard')"&gt;Try it&lt;/button&gt;
+&lt;button onclick="myFunction('Bob','Builder')"&gt;Try it&lt;/button&gt;
+</code></pre>
+</div>
+
+<p>根据点击的不同的按钮，上面的例子会提示 “Welcome Harry Potter, the Wizard” 或 “Welcome Bob, the Builder”。</p>
+
+<h2 id="section-1">带有返回值的函数</h2>
+
+<p>有时，我们会希望函数将值返回调用它的地方。
+通过使用 return 语句就可以实现。
+在使用 return 语句时，函数会停止执行，并返回指定的值。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function myFunction()
+{
+   	 var x=5;
+   		 return x;
+}
+</code></pre>
+</div>
+
+<p>上面的函数会返回值 5。</p>
+
+<p><strong>注意：</strong> 整个 <code class="highlighter-rouge">JavaScript</code> 并不会停止执行，仅仅是函数。<code class="highlighter-rouge">JavaScript</code> 将继续执行代码，从调用函数的地方。
+函数调用将被返回值取代：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>var myVar=myFunction();
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">myVar</code> 变量的值是 <code class="highlighter-rouge">5</code>，也就是函数 <code class="highlighter-rouge">myFunction()</code> 所返回的值。</p>
+
+<p>即使不把它保存为变量，也可以使用返回值：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>document.getElementById("demo").innerHTML=myFunction();
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">demo</code> 元素的 <code class="highlighter-rouge">innerHTML</code> 将成为 5，也就是函数 <code class="highlighter-rouge">myFunction()</code> 所返回的值。</p>
+
+<p>可以使返回值基于传递到函数中的参数：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function myFunction(a,b)
+{
+	return a*b;
+}
+document.getElementById("demo").innerHTML=myFunction(4,3);
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">demo</code> 元素的 innerHTML 将是：<code class="highlighter-rouge">12</code></p>
+
+<p>当然这里的<code class="highlighter-rouge">return</code>和iOS中的<code class="highlighter-rouge">return</code>基本相同，也可以用于提前结束函数，跳出函数：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>function myFunction(a,b)
+{
+	if (a&gt;b)
+	{
+		return;
+	}
+	x=a+b
+}
+</code></pre>
+</div>
+
+<p>如果 <code class="highlighter-rouge">a</code> 大于 <code class="highlighter-rouge">b</code>，则上面的代码将退出函数，并不会计算 <code class="highlighter-rouge">a</code> 和 <code class="highlighter-rouge">b</code> 的总和。</p>
+
+<h2 id="javascript--2">局部 JavaScript 变量</h2>
+
+<p>在 <code class="highlighter-rouge">JavaScript</code> 函数内部声明的变量（使用 <code class="highlighter-rouge">var</code>）是局部变量，所以只能在函数内部访问它。（该变量的作用域是局部的）。
+您可以在不同的函数中使用名称相同的局部变量，因为只有声明过该变量的函数才能识别出该变量。
+只要函数运行完毕，本地变量就会被删除。</p>
+
+<h2 id="javascript--3">全局 JavaScript 变量</h2>
+
+<p>在函数外声明的变量是全局变量，网页上的所有脚本和函数都能访问它。</p>
+
+<h2 id="javascript--4">JavaScript 变量的生存期</h2>
+
+<p><code class="highlighter-rouge">JavaScript</code> 变量的生命期从它们被声明的时间开始。
+局部变量会在函数运行以后被删除。
+全局变量会在页面关闭后被删除。</p>
+
+<h2 id="javascript--5">向未声明的 JavaScript 变量分配值</h2>
+
+<p>如果把值赋给尚未声明的变量，该变量将被自动作为全局变量声明。</p>
+
+<p>这条语句：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>carname="Volvo";
+</code></pre>
+</div>
+
+<p>将声明一个全局变量 <code class="highlighter-rouge">carname</code>，即使它在函数内执行。</p>
+
+<h1 id="javascript--6">JavaScript 作用域</h1>
+
+<p><code class="highlighter-rouge">作用域</code>可访问变量的集合。在 <code class="highlighter-rouge">JavaScript</code> 中, 对象和函数同样也是变量。</p>
+
+<p><strong>在 <code class="highlighter-rouge">JavaScript</code> 中, 作用域为可访问变量，对象，函数的集合。</strong></p>
+
+<p><code class="highlighter-rouge">JavaScript</code> 函数作用域: 作用域在函数内修改。</p>
+
+<h2 id="javascript--7">JavaScript 局部作用域</h2>
+
+<p>变量在函数内声明，变量为局部作用域。
+局部变量：只能在函数内部访问。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 此处不能调用 carName 变量
+
+function myFunction() {
+    var carName = "Volvo";
+
+    // 函数内可调用 carName 变量
+
+}
+</code></pre>
+</div>
+<p>因为局部变量只作用于函数内，所以不同的函数可以使用相同名称的变量。
+局部变量在函数开始执行时创建，函数执行完后局部变量会自动销毁。</p>
+
+<h2 id="javascript--8">JavaScript 全局变量</h2>
+
+<p>变量在函数外定义，即为全局变量。
+全局变量有 <strong>全局作用域</strong>: 网页中所有脚本和函数均可使用。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>var carName = " Volvo";
+
+// 此处可调用 carName 变量
+
+function myFunction() {
+
+    // 函数内可调用 carName 变量 
+
+}
+</code></pre>
+</div>
+
+<p>如果变量在函数内没有声明（没有使用 <code class="highlighter-rouge">var</code> 关键字），该变量为全局变量。
+以下实例中 <code class="highlighter-rouge">carName</code> 在函数内，但是为全局变量。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 此处可调用 carName 变量
+
+function myFunction() {
+    carName = "Volvo";
+
+    // 此处可调用 carName 变量
+
+}
+</code></pre>
+</div>
+
+<h2 id="javascript--9">JavaScript 变量生命周期</h2>
+
+<p><code class="highlighter-rouge">JavaScript</code> 变量生命周期在它声明时初始化。
+局部变量在函数执行完毕后销毁。
+全局变量在页面关闭后销毁。</p>
+
+<h3 id="section-2">函数参数</h3>
+
+<p>函数参数只在函数内起作用，是局部变量。</p>
+
+<h2 id="html-">HTML 中的全局变量</h2>
+
+<p>在 <code class="highlighter-rouge">HTML</code> 中, 全局变量是 <code class="highlighter-rouge">window</code> 对象: 所有数据变量都属于 <code class="highlighter-rouge">window</code> 对象。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>//此处可使用 window.carName
+
+function myFunction() {
+    carName = "Volvo";
+}
+</code></pre>
+</div>
+
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/11/javascript%E8%87%AA%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%A4%A9/" title="link to JavaScript自学第二天 - HarwordLiu">JavaScript自学第二天 - HarwordLiu</a></h2>
+       <p class="excerpt">JavaScript 语句JavaScript 语句向浏览器发出的命令。语句的作用是告诉浏览器该做什么。下面的 JavaScript 语句向 id="demo" 的 HTML 元素输出文本 "你好 Dolly" document.getElementById("demo").innerHTML = "你好 Dolly";分号 ;分号用于分隔 JavaScript 语句。通常我们在每条可执行的语句结尾添加分号。使用分号的另一用处是在一行中编写多条语句。a = 5; b = 6; c = a ...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-11-03 13:02:36 +0800" class="post-list__meta--date date">2016-11-03</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/11/javascript%E8%87%AA%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%A4%A9/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<section class="post-comments">
+  
+    <div class="ds-thread" data-thread-key="/2016/11/javascript%E8%87%AA%E5%AD%A6%E7%AC%AC%E4%B8%89%E5%A4%A9/" data-title="JavaScript自学第三天 - HarwordLiu" data-url="http://vno.onevcat.com/2016/11/javascript%E8%87%AA%E5%AD%A6%E7%AC%AC%E4%B8%89%E5%A4%A9/"></div>
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"harwordliu"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2016-11-10 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">本站由 <a href="http://harwordliu.com">@harword</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2016</span>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>

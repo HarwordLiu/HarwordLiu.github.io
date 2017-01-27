@@ -124,6 +124,7 @@ var y = "He is called \"Johnny\"";
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var sln = txt.length;
 ```
+
 ## 特殊字符
 在 `JavaScript` 中，字符串写在单引号或双引号来中。
 因为这样，以下实例 `JavaScript` 无法解析：x

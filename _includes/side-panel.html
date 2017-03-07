@@ -12,11 +12,11 @@
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
-        
+
         {% if site.welcome_message %}
         <p class="panel-cover__description">{{ site.welcome_message }}</p>
         {% endif %}
-        
+
         <div class="navigation-wrapper">
           <div>
             <nav class="cover-navigation cover-navigation--primary">
@@ -28,16 +28,17 @@
               </ul>
             </nav>
           </div>
-          
+
           <div>{% include social.html %}</div>
         </div>
       </div>
     </div>
-    
+
     {% if site.cover_color %}
     <div class="panel-cover--overlay cover-{{site.cover_color}}"></div>
     {% else %}
     <div class="panel-cover--overlay cover-disabled"></div>
     {% endif %}
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2061452&auto=1&height=66"></iframe>
   </div>
 </header>

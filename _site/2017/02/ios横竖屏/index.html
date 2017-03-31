@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>关于iOS横竖屏适配 - HarwordLiu</title>
+  <meta name="description" content="关于横竖屏适配，有一句说一句，坑挺深的。之前做Vision和毕设的时候就处理过横竖屏问题，不过当时的功力太浅，明显没有处理明白。所以这次在公司项目中又一次遇到了这种横竖屏的需求，自然要认真的搞一哈，顺便总结一下分享给大家。其实在我理解上，只要明白一下几点，横竖屏处理上并不是问题。大家按需跳转吧：">
+  <meta name="author" content="Wei Wang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="关于iOS横竖屏适配 - HarwordLiu">
+  <meta name="twitter:description" content="关于横竖屏适配，有一句说一句，坑挺深的。之前做Vision和毕设的时候就处理过横竖屏问题，不过当时的功力太浅，明显没有处理明白。所以这次在公司项目中又一次遇到了这种横竖屏的需求，自然要认真的搞一哈，顺便总结一下分享给大家。其实在我理解上，只要明白一下几点，横竖屏处理上并不是问题。大家按需跳转吧：">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="关于iOS横竖屏适配 - HarwordLiu">
+  <meta property="og:description" content="关于横竖屏适配，有一句说一句，坑挺深的。之前做Vision和毕设的时候就处理过横竖屏问题，不过当时的功力太浅，明显没有处理明白。所以这次在公司项目中又一次遇到了这种横竖屏的需求，自然要认真的搞一哈，顺便总结一下分享给大家。其实在我理解上，只要明白一下几点，横竖屏处理上并不是问题。大家按需跳转吧：">
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://vno.onevcat.com/2017/02/ios%E6%A8%AA%E7%AB%96%E5%B1%8F/">
+  <link rel="alternate" type="application/rss+xml" title="HarwordLiu" href="http://vno.onevcat.com/feed.xml">
+
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 HarwordLiu 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="HarwordLiu logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for HarwordLiu" class="blog-button">HarwordLiu</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">程序猿一枚,现居北京</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"><p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        
+        <p class="panel-cover__description">欢迎来到HarwordLiu的博客</p>
+        
+
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="查看详细" class="blog-button">博客</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/RilmaHliu" title="@RilmaHliu 的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/HarwordLiu" title="@HarwordLiu 的 Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+
+  
+
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:harwordliu@163.com" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="panel-cover--overlay cover-rgb(151, 255, 255)"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2017-02-19 20:01:55 +0800" itemprop="datePublished" class="post-meta__date date">2017-02-19</time> &#8226; <span class="post-meta__tags tags"></span>
+    </div>
+    <h1 class="post-title">关于iOS横竖屏适配 - HarwordLiu</h1>
+  </header>
+
+  <section class="post">
+    <p>关于横竖屏适配，有一句说一句，坑挺深的。之前做Vision和毕设的时候就处理过横竖屏问题，不过当时的功力太浅，明显没有处理明白。所以这次在公司项目中又一次遇到了这种横竖屏的需求，自然要认真的搞一哈，顺便总结一下分享给大家。其实在我理解上，只要明白一下几点，横竖屏处理上并不是问题。大家按需跳转吧：</p>
+
+<p><a href="#1">1.横竖屏方向枚举</a></p>
+
+<p><a href="#2">2.开启横竖屏权限</a></p>
+
+<p><a href="#3">3.在VC中如何开启横竖屏</a></p>
+
+<p><a href="#4">4.横竖屏控制优先级</a></p>
+
+<p><a href="#5">5.横竖屏适配</a></p>
+
+<p><a href="#6">6.总结</a></p>
+
+<h2 id="a-name1a-1"><a name="1"></a> 1.横竖屏方向枚举</h2>
+<p>关于横竖屏一共有三种枚举，UIInterfaceOrientation，UIInterfaceOrientationMask，UIDeviceOrientation。</p>
+
+<h3 id="uiinterfaceorientationuideviceorientation">1.1 UIInterfaceOrientation与UIDeviceOrientation</h3>
+<p>为什么这两个放在一起说，好吧，你看看下面这个枚举定义：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>typedef NS_ENUM(NSInteger, UIInterfaceOrientation) {
+    UIInterfaceOrientationUnknown            = UIDeviceOrientationUnknown,
+    UIInterfaceOrientationPortrait           = UIDeviceOrientationPortrait,
+    UIInterfaceOrientationPortraitUpsideDown = UIDeviceOrientationPortraitUpsideDown,
+    UIInterfaceOrientationLandscapeLeft      = UIDeviceOrientationLandscapeRight,
+    UIInterfaceOrientationLandscapeRight     = UIDeviceOrientationLandscapeLeft
+}
+</code></pre>
+</div>
+
+<p>我相信你应该看出了点东西了把，对于<code class="highlighter-rouge">iOS</code>设备来讲，屏幕状态由以上五种状态。上下翻转还是很好区分的，左右旋转可能就不是很好区分。</p>
+
+<p><strong>这里有个坑！！！</strong>
+高能预警：
+请仔细观察上面的枚举值。</p>
+<blockquote>
+  <p>在处于竖屏和上下翻转的状态下这两个枚举值是一样的，而当处于横屏时，这两个值刚好相反。</p>
+</blockquote>
+
+<p>所以在有时你发现跟你预期的翻转方向不一样的时候，可能你用错了枚举。</p>
+
+<p><code class="highlighter-rouge">UIDeviceOrientation</code> 是设备的当前所处的方向，而且事实上它有6个值，</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>typedef NS_ENUM(NSInteger, UIDeviceOrientation) {
+    UIDeviceOrientationUnknown,
+    UIDeviceOrientationPortrait,            // Device oriented vertically, home button on the bottom
+    UIDeviceOrientationPortraitUpsideDown,  // Device oriented vertically, home button on the top
+    UIDeviceOrientationLandscapeLeft,       // Device oriented horizontally, home button on the right
+    UIDeviceOrientationLandscapeRight,      // Device oriented horizontally, home button on the left
+    UIDeviceOrientationFaceUp,              // Device oriented flat, face up
+    UIDeviceOrientationFaceDown             // Device oriented flat, face down
+}
+</code></pre>
+</div>
+<p>分别对应<code class="highlighter-rouge">iPhone</code>未知方向，竖直，上下反转，向左旋转，向右旋转，屏幕朝上，屏幕朝下。关于横屏如何去分左右，其实API中的注释已经说明，当处于<code class="highlighter-rouge">UIDeviceOrientationLandscapeLeft</code>，home键在右侧，当处于<code class="highlighter-rouge">UIDeviceOrientationLandscapeRight</code>，home键在左侧。</p>
+
+<p>所以，<code class="highlighter-rouge">UIDevice</code>顾名思义，事实上是用来判断设备方向的。</p>
+
+<p><code class="highlighter-rouge">UIInterfaceOrientation</code> 即当前页面的方向。</p>
+
+<p>在设备进行横屏旋转的时候，为了横屏时上下不翻转，所以当Device处于Left时，界面应该是Right旋转。这样才不会使横屏时内容上下翻转。所以我想你应该明白了为什么在处于横屏时为什么他们俩的值是刚好相反的。</p>
+
+<p>所以对于横竖屏适配，使用的枚举大家一定要看好，使用<code class="highlighter-rouge">UIInterfaceOrientation</code>。不要搞反。</p>
+
+<h3 id="uiinterfaceorientationmask">1.2 UIInterfaceOrientationMask</h3>
+
+<p>其实苹果大大还是给了我们更清晰和方便的枚举如下：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>typedef NS_OPTIONS(NSUInteger, UIInterfaceOrientationMask) {
+    UIInterfaceOrientationMaskPortrait = (1 &lt;&lt; UIInterfaceOrientationPortrait),
+    UIInterfaceOrientationMaskLandscapeLeft = (1 &lt;&lt; UIInterfaceOrientationLandscapeLeft),
+    UIInterfaceOrientationMaskLandscapeRight = (1 &lt;&lt; UIInterfaceOrientationLandscapeRight),
+    UIInterfaceOrientationMaskPortraitUpsideDown = (1 &lt;&lt; UIInterfaceOrientationPortraitUpsideDown),
+    UIInterfaceOrientationMaskLandscape = (UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight),
+    UIInterfaceOrientationMaskAll = (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight | UIInterfaceOrientationMaskPortraitUpsideDown),
+    UIInterfaceOrientationMaskAllButUpsideDown = (UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskLandscapeLeft | UIInterfaceOrientationMaskLandscapeRight),
+}
+</code></pre>
+</div>
+<p>事实上我们在横竖屏适配时，最常用的是这个枚举。这个枚举详细的列举了各种你需要的情况。我就不赘述了。官方的命名还是很舒服很好理解的。</p>
+
+<h2 id="a-name2a-2"><a name="2"></a> 2.开启横竖屏权限</h2>
+<p>开启横竖屏的方式有两种，一种是在项目中直接进行勾选，</p>
+
+<p><img src="https://raw.githubusercontent.com/HarwordLiu/README_Images/master/blog/2-18/1.png" alt="image 1" /></p>
+
+<p>可以看到这种勾选方式允许你进行四个方向的配置，并且这种勾选方式会直接在你的项目plist文件中添加</p>
+
+<p><img src="https://raw.githubusercontent.com/HarwordLiu/README_Images/master/blog/2-18/2.png" alt="image 2" /></p>
+
+<p>但是由于在这里配置是对项目启动时lanuch界面产生影响，而往往我们又没有对lanuch进行横竖屏适配，所以在这个时候我们就需要使用第二种方式进行配置。</p>
+
+<p>在项目中的AppDelegate文件中进行配置。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#pragma mark - InterfaceOrientation //应用支持的方向
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window {
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
+</code></pre>
+</div>
+
+<p>搭配<code class="highlighter-rouge">UIInterfaceOrientationMask</code>使用，你可以很方便的让你项目开启你所需要的横竖屏权限和限制条件。</p>
+
+<h2 id="a-name3a-3vc"><a name="3"></a> 3.在VC中如何控制横竖屏</h2>
+<p>我们都知道MVC架构，那么显而易见，在我们开启了项目的横竖屏的限制之后，需要在<code class="highlighter-rouge">ViewController</code>进行相应的配置，才能真正实现横竖屏。</p>
+
+<p>开启横竖屏，我们需要在VC中添加如下代码：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 设备支持方向
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+// 默认方向
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    return UIInterfaceOrientationPortrait; // 或者其他值 balabala~
+}
+</code></pre>
+</div>
+
+<p>而对于横竖屏，手机端一般有两种情况，一种是手机没有开启横竖屏锁定，用户将手机横屏时触发的。对于第一种情况，我们只需要在VC中添加：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>// 开启自动转屏
+- (BOOL)shouldAutorotate {
+    return YES;
+}
+</code></pre>
+</div>
+<p>另一种是我们在项目中的某些条件下强行让屏幕横屏，例如大图预览，视频播放，等等。而对于这种情况，我们可以使用下面👇这两种方法，都可以实现效果：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)setInterfaceOrientation:(UIInterfaceOrientation)orientation {
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        SEL selector = NSSelectorFromString(@"setOrientation:");
+        NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
+        [invocation setSelector:selector];
+        [invocation setTarget:[UIDevice currentDevice]];
+        int val = orientation;
+        [invocation setArgument:&amp;val atIndex:2];
+        [invocation invoke];
+    }
+}
+
+</code></pre>
+</div>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)setInterfaceOrientation:(UIDeviceOrientation)orientation {
+    if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
+        [[UIDevice currentDevice] setValue:[NSNumber numberWithInteger:orientation] forKey:@"orientation"];
+    }
+}
+</code></pre>
+</div>
+<p>PS：这两个方法只有在<code class="highlighter-rouge">- (BOOL)shouldAutorotate( return YES; )</code>时，才会生效。并且请注意使用的枚举值的不同。</p>
+
+<h2 id="a-name4a-4"><a name="4"></a> 4.横竖屏控制优先级</h2>
+<p>在我们接手一个项目后，说要添加一个某个界面横竖屏需求时，发现按照上面的方式配置了一圈，发现还是转！不！成！功！What F***！！！</p>
+
+<p>事实上在这里我们要了解一个问题，就是关于横竖屏控制的优先级。对于限于<code class="highlighter-rouge">VC</code>范围来讲优先级最高的是当前的<code class="highlighter-rouge">window</code>的<code class="highlighter-rouge">rootViewController</code>，而往往我们的项目结构是容器视图控制器控制<code class="highlighter-rouge">VC</code>，<code class="highlighter-rouge">tabBarController</code>控制<code class="highlighter-rouge">navigationController</code>之后是<code class="highlighter-rouge">VC</code>，而横竖屏控制的优先级也是跟你的项目架构一样。而且是一旦优先级高的关闭了横竖屏配置，优先级低的无论如何配置都无法做到横竖屏。所以在你接受这个需求的时候，你需要看一下根视图的配置。</p>
+
+<p>对于这种情况，我们有两种处理方式，一种是通过模态的方式跳转的下个<code class="highlighter-rouge">VC</code>，这个<code class="highlighter-rouge">VC</code>是隔离出来的，不在你之前的容器里，不会受到<code class="highlighter-rouge">rootViewController</code>的影响。</p>
+
+<p>而另一种我们需要改造一下根视图的配置：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-(BOOL)shouldAutorotate {  
+    return [[self.viewControllers lastObject] shouldAutorotate];  
+}  
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {  
+     return [[self.viewControllers lastObject] supportedInterfaceOrientations];  
+}  
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {  
+    return [[self.viewControllers lastObject] preferredInterfaceOrientationForPresentation];  
+}
+</code></pre>
+</div>
+<p>或者</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>-(BOOL)shouldAutorotate {
+    if ([[self.viewControllers lastObject]isKindOfClass:[NewViewController class]]) {
+        return YES;
+    }
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    if ([[self.viewControllers lastObject]isKindOfClass:[NewViewController class]]) {
+        return UIInterfaceOrientationMaskLandscapeLeft;
+    }
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
+    if ([[self.viewControllers lastObject]isKindOfClass:[NewViewController class]]) {
+        return UIInterfaceOrientationLandscapeLeft;
+    }
+    return UIInterfaceOrientationPortrait;
+}
+</code></pre>
+</div>
+<p>可以看到我们通过获取push栈中的最后一个<code class="highlighter-rouge">VC</code>的属性，或指定特殊的<code class="highlighter-rouge">VC</code>来进行<code class="highlighter-rouge">rootViewController</code>的横竖屏设置。</p>
+
+<p>当然也可以通过<code class="highlighter-rouge">NSNotificationCenter</code>或者<code class="highlighter-rouge">NSUserDefaults</code>的方式对这里的值进行设置，在这里我就不过多赘述了。</p>
+
+<p>总之要知道优先级的问题，<code class="highlighter-rouge">general</code> == <code class="highlighter-rouge">appDelegate</code> » <code class="highlighter-rouge">rootViewController</code> » <code class="highlighter-rouge">nomalViewController</code></p>
+
+<p>明白了权限的优先级以及开启的方法我想转屏就很显而易见了。</p>
+
+<h2 id="a-name5a-5"><a name="5"></a> 5.横竖屏适配</h2>
+<p>事实上旋转屏幕成功，对于iOS横竖屏问题我们只是完成了一半。另一半就是UI适配问题，其实这个要说起来就比较麻烦了，有些时候有很多case需要针对对应的业务条件来定制。但是无外乎几种实现思路。这里博主给大家抛几块砖哈：</p>
+
+<p>首先我们要知道，当发生转屏事件时，系统的回调方法是：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id&lt;UIViewControllerTransitionCoordinator&gt;)coordinator {
+    
+    if (size.width &gt; size.height) { // 横屏
+		// 横屏布局 balabala
+    } else {
+		// 竖屏布局 balabala
+    }
+}
+</code></pre>
+</div>
+<p>首推的方式是使用约束布局，在使用约束布局时，横竖屏转换时，在通常情况下约束条件会很相似，所以在布局上会极大的减少代码量。其次如果有个别的特殊问题，可以在上面的回调方法里面进行微调。</p>
+
+<p>其次，对于转屏后，<code class="highlighter-rouge">[UIScreen mainScreen].bounds.size</code>以及<code class="highlighter-rouge">self.view.frame.size</code>的宽高系统会自动调换。即在横屏的时候<code class="highlighter-rouge">width &gt; height</code>。所以在我们进行常规布局的时候我们可以选择控件的<code class="highlighter-rouge">frame</code>属性都与这两个属性进行比例换算。这样在当横竖屏转换的时候，重布局时，也会适应成对应屏幕下的布局。同样有需要特殊处理的布局，在上面的回调方法中进行细节微调即可。</p>
+
+<p>对于子视图，在横竖屏切换时，会触发子视图重布局的方法：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- (void)layoutSubviews {
+    [super layoutSubviews];
+    // 通过状态栏电池图标来判断屏幕方向
+    if ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationMaskPortrait) {
+        // 竖屏 balabala
+    } else {
+        // 横屏 balabala
+    }
+}
+</code></pre>
+</div>
+<p>当然我只是说了几种比较简单的处理方式，和应对方法，对于整个项目都需要横竖屏适配的，我想还是一个比较复杂的过程。在实在处理不了的问题上，也可以通过写两套布局的方式来处理。至于过场动画，理论上如果你用约束和我说的比例布局的方式来写，基本系统会自动帮你这个问题给处理掉。但如果两种布局差距很大，你用了两套完全不同的布局，那这个你可能就要伤脑筋了。哈哈哈。不过有一些情况处理要求不严格的话可以使用截图过场大法来解决。不过这个就不是本文的设计范围了。大家如果感兴趣可以自己google一下。当然我日后的文章也可能会写到这了。到时候再来这里修改。</p>
+
+<h2 id="a-name6a-6"><a name="6"></a> 6.总结</h2>
+<p>iOS横竖屏适配，确实有很多坑，当然，有些坑是系统的；而有些坑，是因为我们的无知而造成的。所以多看多学多做多理解，必然能让你学到更多，增强填坑的硬实力。而对于横竖屏适配这块，转屏并不难，难的是横竖屏布局适配。博主只是简单的说了一些思路，至于实现起来，还是要针对对应的需求来进行处理。下面👇给大家链接几个博主觉得还不错的关于适配的文章，大家可以看看：</p>
+
+<p><a href="http://www.jianshu.com/p/7cfabd741455">iPad横竖屏下的代码适配</a></p>
+
+<p><a href="http://www.cnblogs.com/cxbblog/p/4166876.html">iOS 屏幕适配，autoResizing autoLayout和sizeClass图文详解</a></p>
+
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2017/01/2016%E8%AF%B8%E5%A4%9A%E6%84%9F%E6%82%9F/" title="link to 2016诸多感悟 - HarwordLiu">2016诸多感悟 - HarwordLiu</a></h2>
+       <p class="excerpt">巨变的 20162016年，互联网环境巨变，大环境的改变也注定促使我们这些小人物不得不做妥协。而今年对我来讲绝对是称得上是巨变的一年。我得到了很多东西，也失去了很多。一切都是有代价的。总想写点什么记录我这一年的种种。但是不知道从哪里开头。不想写成口水仗，但是文笔也没那么6。所以我想到哪写到哪，没有什么特殊的中心思想。只是围绕着我自己写点什么纪念一下逝去的2016。HarwordLiu这一年我的转变  从小屁孩到大屁孩。  从学生时代到搬砖猿时代。  从大连锐进到北京心更远。  从年初跟一帮...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2017-01-27 10:53:36 +0800" class="post-list__meta--date date">2017-01-27</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2017/01/2016%E8%AF%B8%E5%A4%9A%E6%84%9F%E6%82%9F/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<section class="post-comments">
+  
+    <div class="ds-thread" data-thread-key="/2017/02/ios%E6%A8%AA%E7%AB%96%E5%B1%8F/" data-title="关于iOS横竖屏适配 - HarwordLiu" data-url="http://vno.onevcat.com/2017/02/ios%E6%A8%AA%E7%AB%96%E5%B1%8F/"></div>
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"harwordliu"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2017-03-31 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">本站由 <a href="http://harwordliu.com">@harword</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2017</span>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>

@@ -5,9 +5,47 @@
     <description>&lt;p&gt;&lt;/p&gt;&lt;p&gt;用我不悠扬的歌声&lt;/p&gt;&lt;p&gt;温暖你整个旅途&lt;/p&gt;</description>
     <link>http://vno.onevcat.com/</link>
     <atom:link href="http://vno.onevcat.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 31 Mar 2017 10:28:31 +0800</pubDate>
-    <lastBuildDate>Fri, 31 Mar 2017 10:28:31 +0800</lastBuildDate>
+    <pubDate>Tue, 02 May 2017 10:34:19 +0800</pubDate>
+    <lastBuildDate>Tue, 02 May 2017 10:34:19 +0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Facebook的pop动画库教程 - HarwordLiu</title>
+        <description>&lt;p&gt;博主由于公司最近在做一个动效很细致的App，所以调研了一些UI动效的三方库。这里拎出去了Facebook的库来聊一聊。估计翻到我这篇文章的小伙伴，一种是想快速使用，一种是想深入了解Facebook的这个库，所以针对这两种情况，我把文章分为了以下几部分，小伙伴们按需跳转。（PS：Xcode8.3.1，swift3.1）&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#1&quot;&gt;一. pop库的快速使用&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#2&quot;&gt;二. pop库的简介&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#3&quot;&gt;三. pop库的高级使用&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;a-name1a--pop&quot;&gt;&lt;a name=&quot;1&quot;&gt;&lt;/a&gt; 一. pop库的快速使用&lt;/h2&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;1. 导入&lt;/h3&gt;
+
+&lt;p&gt;无外乎两种套路一种手动导入，一种cocoaPods导入，个人推荐cocoaPods导入。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/facebook/pop&quot;&gt;pop库GitHub链接&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;具体的导入步骤GitHub有说明。这里不再展开说明，有问题可以&lt;code class=&quot;highlighter-rouge&quot;&gt;@我&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2. 快速使用&lt;/h3&gt;
+
+&lt;h4 id=&quot;section-2&quot;&gt;2.1 创建一条位置移动动画&lt;/h4&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 11 Apr 2017 10:50:32 +0800</pubDate>
+        <link>http://vno.onevcat.com/2017/04/facebook%E7%9A%84pop%E5%8A%A8%E7%94%BB%E5%BA%93%E6%95%99%E7%A8%8B/</link>
+        <guid isPermaLink="true">http://vno.onevcat.com/2017/04/facebook%E7%9A%84pop%E5%8A%A8%E7%94%BB%E5%BA%93%E6%95%99%E7%A8%8B/</guid>
+        
+        
+        <category>iOS</category>
+        
+      </item>
     
       <item>
         <title>关于iOS横竖屏适配 - HarwordLiu</title>

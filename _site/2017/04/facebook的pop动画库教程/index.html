@@ -6,17 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>Java踩坑日记 - HarwordLiu</title>
-  <meta name="description" content="<p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p>">
+  <title>Facebook的pop动画库教程 - HarwordLiu</title>
+  <meta name="description" content="博主由于公司最近在做一个动效很细致的App，所以调研了一些UI动效的三方库。这里拎出去了Facebook的库来聊一聊。估计翻到我这篇文章的小伙伴，一种是想快速使用，一种是想深入了解Facebook的这个库，所以针对这两种情况，我把文章分为了以下几部分，小伙伴们按需跳转。（PS：Xcode8.3.1，swift3.1）">
   <meta name="author" content="Wei Wang">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Java踩坑日记 - HarwordLiu">
-  <meta name="twitter:description" content="<p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p>">
+  <meta name="twitter:title" content="Facebook的pop动画库教程 - HarwordLiu">
+  <meta name="twitter:description" content="博主由于公司最近在做一个动效很细致的App，所以调研了一些UI动效的三方库。这里拎出去了Facebook的库来聊一聊。估计翻到我这篇文章的小伙伴，一种是想快速使用，一种是想深入了解Facebook的这个库，所以针对这两种情况，我把文章分为了以下几部分，小伙伴们按需跳转。（PS：Xcode8.3.1，swift3.1）">
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Java踩坑日记 - HarwordLiu">
-  <meta property="og:description" content="<p></p><p>用我不悠扬的歌声</p><p>温暖你整个旅途</p>">
+  <meta property="og:title" content="Facebook的pop动画库教程 - HarwordLiu">
+  <meta property="og:description" content="博主由于公司最近在做一个动效很细致的App，所以调研了一些UI动效的三方库。这里拎出去了Facebook的库来聊一聊。估计翻到我这篇文章的小伙伴，一种是想快速使用，一种是想深入了解Facebook的这个库，所以针对这两种情况，我把文章分为了以下几部分，小伙伴们按需跳转。（PS：Xcode8.3.1，swift3.1）">
 
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
   <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="/css/main.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="canonical" href="http://vno.onevcat.com/drafts/2016-12-03-java%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/">
+  <link rel="canonical" href="http://vno.onevcat.com/2017/04/facebook%E7%9A%84pop%E5%8A%A8%E7%94%BB%E5%BA%93%E6%95%99%E7%A8%8B/">
   <link rel="alternate" type="application/rss+xml" title="HarwordLiu" href="http://vno.onevcat.com/feed.xml">
 
   <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
@@ -132,15 +132,38 @@
             <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2016-12-03 11:01:20 +0800" itemprop="datePublished" class="post-meta__date date">2016-12-03</time> &#8226; <span class="post-meta__tags tags"></span>
+      <time datetime="2017-04-11 10:50:32 +0800" itemprop="datePublished" class="post-meta__date date">2017-04-11</time> &#8226; <span class="post-meta__tags tags"></span>
     </div>
-    <h1 class="post-title">Java踩坑日记 - HarwordLiu</h1>
+    <h1 class="post-title">Facebook的pop动画库教程 - HarwordLiu</h1>
   </header>
 
   <section class="post">
-    <h1 id="java">Java踩坑日记</h1>
+    <p>博主由于公司最近在做一个动效很细致的App，所以调研了一些UI动效的三方库。这里拎出去了Facebook的库来聊一聊。估计翻到我这篇文章的小伙伴，一种是想快速使用，一种是想深入了解Facebook的这个库，所以针对这两种情况，我把文章分为了以下几部分，小伙伴们按需跳转。（PS：Xcode8.3.1，swift3.1）</p>
 
-<h1 id="section">#</h1>
+<p><a href="#1">一. pop库的快速使用</a></p>
+
+<p><a href="#2">二. pop库的简介</a></p>
+
+<p><a href="#3">三. pop库的高级使用</a></p>
+
+<h2 id="a-name1a--pop"><a name="1"></a> 一. pop库的快速使用</h2>
+
+<h3 id="section">1. 导入</h3>
+
+<p>无外乎两种套路一种手动导入，一种cocoaPods导入，个人推荐cocoaPods导入。</p>
+
+<p><a href="https://github.com/facebook/pop">pop库GitHub链接</a></p>
+
+<p>具体的导入步骤GitHub有说明。这里不再展开说明，有问题可以<code class="highlighter-rouge">@我</code>。</p>
+
+<h3 id="section-1">2. 快速使用</h3>
+
+<h4 id="section-2">2.1 创建一条位置移动动画</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>
+</code></pre>
+</div>
+
 
   </section>
 </article>
@@ -149,11 +172,19 @@
    
    
    
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2017/02/ios%E6%A8%AA%E7%AB%96%E5%B1%8F/" title="link to 关于iOS横竖屏适配 - HarwordLiu">关于iOS横竖屏适配 - HarwordLiu</a></h2>
+       <p class="excerpt">关于横竖屏适配，有一句说一句，坑挺深的。之前做Vision和毕设的时候就处理过横竖屏问题，不过当时的功力太浅，明显没有处理明白。所以这次在公司项目中又一次遇到了这种横竖屏的需求，自然要认真的搞一哈，顺便总结一下分享给大家。其实在我理解上，只要明白一下几点，横竖屏处理上并不是问题。大家按需跳转吧：1.横竖屏方向枚举2.开启横竖屏权限3.在VC中如何开启横竖屏4.横竖屏控制优先级5.横竖屏适配6.总结 1.横竖屏方向枚举关于横竖屏一共有三种枚举，UIInterfaceOrientation，U...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2017-02-19 20:01:55 +0800" class="post-list__meta--date date">2017-02-19</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2017/02/ios%E6%A8%AA%E7%AB%96%E5%B1%8F/>继续阅读</a></div>
+   </div>
+   
 </section>
 
 <section class="post-comments">
   
-    <div class="ds-thread" data-thread-key="/drafts/2016-12-03-java%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/" data-title="Java踩坑日记 - HarwordLiu" data-url="http://vno.onevcat.com/drafts/2016-12-03-java%E8%B8%A9%E5%9D%91%E6%97%A5%E8%AE%B0/"></div>
+    <div class="ds-thread" data-thread-key="/2017/04/facebook%E7%9A%84pop%E5%8A%A8%E7%94%BB%E5%BA%93%E6%95%99%E7%A8%8B/" data-title="Facebook的pop动画库教程 - HarwordLiu" data-url="http://vno.onevcat.com/2017/04/facebook%E7%9A%84pop%E5%8A%A8%E7%94%BB%E5%BA%93%E6%95%99%E7%A8%8B/"></div>
     <script type="text/javascript">
         var duoshuoQuery = {short_name:"harwordliu"};
         (function() {
